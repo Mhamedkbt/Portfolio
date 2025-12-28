@@ -5,7 +5,7 @@ const skills = [
   // Frontend
   { name: "HTML", category: "frontend", icon: "https://skillicons.dev/icons?i=html" },
   { name: "CSS", category: "frontend", icon: "https://skillicons.dev/icons?i=css" },
-  { name: "JavaScript", category: "frontend", icon: "https://skillicons.dev/icons?i=js" },
+  { name: "Java Script", category: "frontend", icon: "https://skillicons.dev/icons?i=js" },
   { name: "React JS", category: "frontend", icon: "https://skillicons.dev/icons?i=react" },
   { name: "Tailwind", category: "frontend", icon: "https://skillicons.dev/icons?i=tailwind" },
 
