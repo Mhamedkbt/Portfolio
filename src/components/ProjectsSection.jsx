@@ -4,8 +4,7 @@ const projects = [
   {
     id: 1,
     title: "NovaSaaS Marketing Engine",
-    description:
-      "A high-performance, conversion-optimized landing page featuring dynamic content sections, integrated waitlist management via Supabase, and sub-second load times",
+    description: "A conversion-optimized landing page featuring dynamic content, Supabase waitlist management, and sub-second load times",
     image: "/projects/project1.png",
     tags: ["React.js", "Tailwind CSS", "Supabase", "Framer Motion", "TypeScript"],
     demoUrl: "https://github.com/MhamedKbt",
@@ -15,7 +14,7 @@ const projects = [
     id: 2,
     title: "Ecomm Platform",
     description:
-      "A professional e-commerce ecosystem featuring a secure Admin Panel for inventory control and a seamless customer checkout experience built with Spring Security",
+      "A full-stack ecosystem featuring a secure Admin Panel for inventory control and a seamless checkout experience powered by Spring Security",
     image: "/projects/project2.png",
     tags: ["React.js", "Tailwind CSS", "Java", "Spring Boot", "Spring Security", "PostgreSQL"],
     demoUrl: "https://standard-ecommerce-frontend.onrender.com/",
