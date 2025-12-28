@@ -12,7 +12,7 @@ const skills = [
   // Backend
   { name: "Java", category: "backend", icon: "https://skillicons.dev/icons?i=java" },
   { name: "Spring Boot", category: "backend", icon: "https://skillicons.dev/icons?i=spring" },
-  { name: "PostgreSQL", category: "backend", icon: "https://skillicons.dev/icons?i=postgres" },
+  { name: "Postgres SQL", category: "backend", icon: "https://skillicons.dev/icons?i=postgres" },
   { name: "MySQL", category: "backend", icon: "https://skillicons.dev/icons?i=mysql" },
   { name: "C++", category: "backend", icon: "https://skillicons.dev/icons?i=cpp" },
 

@@ -3,26 +3,36 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 export const ThemeToggle = ({ className }) => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const saved = localStorage.getItem("theme");
+    // Default to true (dark) if no theme is saved
+    return saved ? saved === "dark" : true;
+  });
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem("theme");
-    if (storedTheme === "dark") {
+    const root = window.document.documentElement;
+    const savedTheme = localStorage.getItem("theme");
+
+    // Force dark mode on first load if nothing is saved
+    if (!savedTheme) {
+      root.classList.add("dark");
+      localStorage.setItem("theme", "dark");
       setIsDarkMode(true);
-      document.documentElement.classList.add("dark");
+    } else if (savedTheme === "dark") {
+      root.classList.add("dark");
     } else {
-      document.documentElement.classList.remove("dark");
-      setIsDarkMode(false);
+      root.classList.remove("dark");
     }
   }, []);
 
   const toggleTheme = () => {
+    const root = window.document.documentElement;
     if (isDarkMode) {
-      document.documentElement.classList.remove("dark");
+      root.classList.remove("dark");
       localStorage.setItem("theme", "light");
       setIsDarkMode(false);
     } else {
-      document.documentElement.classList.add("dark");
+      root.classList.add("dark");
       localStorage.setItem("theme", "dark");
       setIsDarkMode(true);
     }
@@ -35,12 +45,11 @@ export const ThemeToggle = ({ className }) => {
         "p-2 rounded-full transition-all duration-300 hover:bg-primary/10 active:scale-90",
         className
       )}
-      aria-label="Toggle Theme"
     >
       {isDarkMode ? (
         <Sun className="h-5 w-5 md:h-6 md:w-6 text-yellow-400" />
       ) : (
-        <Moon className="h-5 w-5 md:h-6 md:w-6 text-slate-700" />
+        <Moon className="h-5 w-5 md:h-6 md:w-6 text-slate-700 dark:text-slate-300" />
       )}
     </button>
   );

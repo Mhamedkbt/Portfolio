@@ -45,7 +45,6 @@ export const StarBackground = () => {
   };
 
   return (
-    /* We use z-0 but ensure the Navbar is much higher */
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
       {stars.map((star) => (
         <div
