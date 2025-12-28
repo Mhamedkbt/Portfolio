@@ -31,6 +31,16 @@ const projects = [
     demoUrl: "https://bookdari.ma/",
     githubUrl: "https://github.com/MhamedKbt",
 },
+{
+  id: 4,
+  title: "Ouimmobilier Marrakech",
+  description:
+    "A professional real estate platform for buying, selling, and renting properties in Marrakech, featuring villas, apartments, and riads with a focus on secure and personalized transactions.",
+  image: "/projects/project4.png",
+  tags: ["HTML", "CSS", "JavaScript", "SCSS"],
+  demoUrl: "https://www.ouimmobiliermarrakech.com/",
+  githubUrl: "https://github.com/MhamedKbt",
+},
 ];
 
 export const ProjectsSection = () => {
