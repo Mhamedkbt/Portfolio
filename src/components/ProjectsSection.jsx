@@ -8,8 +8,8 @@ const projects = [
       "A high-performance, conversion-optimized landing page featuring dynamic content sections, integrated waitlist management via Supabase, and sub-second load times",
     image: "/projects/project1.png",
     tags: ["React.js", "Tailwind CSS", "Supabase", "Framer Motion", "TypeScript"],
-    demoUrl: "https://standard-ecommerce-frontend.onrender.com/",
-    githubUrl: "https://standard-ecommerce-frontend.onrender.com/",
+    demoUrl: "https://github.com/MhamedKbt",
+    githubUrl: "https://github.com/MhamedKbt",
 },
   {
     id: 2,
@@ -19,7 +19,7 @@ const projects = [
     image: "/projects/project2.png",
     tags: ["React.js", "Tailwind CSS", "Java", "Spring Boot", "Spring Security", "PostgreSQL"],
     demoUrl: "https://standard-ecommerce-frontend.onrender.com/",
-    githubUrl: "https://standard-ecommerce-frontend.onrender.com/",
+    githubUrl: "https://github.com/MhamedKbt",
 },
   {
     id: 3,
@@ -29,7 +29,7 @@ const projects = [
     image: "/projects/project3.png",
     tags: ["HTML", "CSS", "JavaScript", "SCSS"],
     demoUrl: "https://bookdari.ma/",
-    githubUrl: "https://standard-ecommerce-frontend.onrender.com/",
+    githubUrl: "https://github.com/MhamedKbt",
 },
 ];
 
