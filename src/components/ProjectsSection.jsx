@@ -35,7 +35,7 @@ const projects = [
   id: 4,
   title: "Ouimmobilier Marrakech",
   description:
-    "A professional real estate platform for buying, selling, and renting properties in Marrakech, featuring villas, apartments, and riads with a focus on secure and personalized transactions.",
+    "A premier real estate platform for buying, selling, and renting villas, riads, and apartments in Marrakech with personalized",
   image: "/projects/project4.png",
   tags: ["HTML", "CSS", "JavaScript", "SCSS"],
   demoUrl: "https://www.ouimmobiliermarrakech.com/",
