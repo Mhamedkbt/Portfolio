@@ -3,17 +3,17 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 export const ThemeToggle = ({ className }) => {
+  // Initialize state: Check localStorage, if empty, default to TRUE (dark)
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const saved = localStorage.getItem("theme");
-    // Default to true (dark) if no theme is saved
-    return saved ? saved === "dark" : true;
+    return saved ? saved === "dark" : true; 
   });
 
   useEffect(() => {
     const root = window.document.documentElement;
     const savedTheme = localStorage.getItem("theme");
 
-    // Force dark mode on first load if nothing is saved
+    // If no theme is saved (first time visitor), force Dark Mode
     if (!savedTheme) {
       root.classList.add("dark");
       localStorage.setItem("theme", "dark");
