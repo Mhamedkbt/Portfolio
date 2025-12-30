@@ -18,6 +18,7 @@ const skills = [
 
   // Tools
   { name: "GitHub", category: "tools", icon: "https://skillicons.dev/icons?i=github" },
+  { name: "Git", category: "tools", icon: "https://skillicons.dev/icons?i=git" },
   { name: "VS Code", category: "tools", icon: "https://skillicons.dev/icons?i=vscode" },
   { name: "IntelliJ", category: "tools", icon: "https://skillicons.dev/icons?i=idea" },
   { name: "Postman", category: "tools", icon: "https://skillicons.dev/icons?i=postman" },
